@@ -1,0 +1,36 @@
+{
+  "name": "e-commerce-project-luisaminej",
+  "version": "1.0.0",
+  "description": "## Objetivo principal",
+  "main": "index.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-mongo": "^4.4.1",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "hbs": "^4.1.2",
+    "http-errors": "^1.8.0",
+    "mongoose": "^5.13.3",
+    "morgan": "^1.10.0",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./bin/www.js",
+    "dev": "nodemon ./bin/www.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisaminej/E-commerce-project-luisaminej.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisaminej/E-commerce-project-luisaminej/issues"
+  },
+  "homepage": "https://github.com/luisaminej/E-commerce-project-luisaminej#readme"
+}

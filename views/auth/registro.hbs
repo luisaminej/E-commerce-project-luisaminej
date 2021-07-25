@@ -1,0 +1,26 @@
+<div id="form">
+
+  <h2>Registro</h2>
+  
+  <form action="/registro" method="POST">
+ 
+    <label> Usuario
+      <input type="text" name="usuario" placeholder="Nombre de usuario" />
+    </label>
+ 
+    <label> Correo:
+      <input type="email" name="correo" placeholder="Correo electrónico" />
+    </label>
+ 
+    <label> Contraseña:
+      <input type="password" name="contraseña" placeholder="Contraseña" />
+    </label>
+ 
+    <button type="submit">Crear cuenta</button>
+ 
+    {{#if msj}} 
+   {{!-- si existe el error de mensaje --}}
+       <p class="error">{{msj}}</p>
+       {{/if}}
+  </form>
+</div>n
