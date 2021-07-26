@@ -14,7 +14,9 @@ require('./configs/db.config');
 
 // Establecer routes
 const indexRouter = require('./routes/home.routes');
-const authRouter    = require('./routes/auth.routes') 
+const authRouter    = require('./routes/auth.routes')
+const categoriaRouter = require('./routes/categoria.routes') 
+const productoRouter = require('./routes/producto.routes')
 
 const app = express();
 
@@ -27,7 +29,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 app.use(express.static(path.join(__dirname, 'public')));
-// app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -44,8 +46,10 @@ app.use((req, res, next) => {
     next()
 })
 // Routes middleware
-app.use('/', indexRouter);
+app.use('/', indexRouter)
 app.use('/', authRouter)
+app.use('/', categoriaRouter)
+app.use('/', productoRouter)
 
 // Detectar rutas faltantes y reenviar un error
 app.use((req, res, next) => next(createError(404)));

@@ -29,8 +29,8 @@ const categoriaSchema        = new Schema({
 
 //MODELO
 
-const Categoria = mongoose.model("Categoria", catalogoSchema)
+const Categoria = mongoose.model("Categoria", categoriaSchema)
 
 //EXPORTACIÓN
 
-module.exports = Catalogo
+module.exports = Categoria

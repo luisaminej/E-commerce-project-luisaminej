@@ -1,0 +1,20 @@
+<div id="form">
+  <h2>Acceder</h2>
+ 
+  <form action="/acceso" method="POST">
+ 
+    <label> Correo
+      <input type="email" name="correo" placeholder="Correo electrónico" />
+    </label>
+ 
+    <label>Contraseña
+      <input type="password" name="password" placeholder="Contraseña" />
+    </label>
+ 
+    <button type="submit">Acceder</button>
+ 
+    {{#if msj}}
+      <p class="error">{{msj}}</p>
+    {{/if}}
+  </form>
+</div>
