@@ -1,2 +1,38 @@
 <h1> Categorías </h1>
 
+
+
+{{#each categoria}}
+<section class="container" id="categoria">
+<div>
+    <article class="service-box">
+        <img src="{{this.image}}" alt="{{this.nombre}}" />
+        <h2>{{this.nombre}}</h2>
+
+    </article>
+</div>
+</section>
+{{/each}}
+{{!--
+{{#each productos}}
+
+
+<div class="col-md-4">
+    <div class="card">
+        <img class="card-img-top" src="{{this.image}}" alt="{{this.nombre}}" />
+        <div class="card-body">
+            <h2 class="card-title">{{this.nombre}}</h2>
+        </div>
+    </div>
+</div>
+
+
+
+
+{{/each}} --}}
+
+
+
+
+<a href="/perfilusuario">Ir atrás</a>
+<hr />

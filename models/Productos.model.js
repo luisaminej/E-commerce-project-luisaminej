@@ -8,11 +8,14 @@ const Schema            = mongoose.Schema
 const productoSchema        = new Schema({
     nombre: String,
     modelo: String,
+    image: String,
     medidas: String,
     color: String,
     capacidad: String,
     conectividad: String,
     multimedia: String,
+    precio: String
+
    
 
 },

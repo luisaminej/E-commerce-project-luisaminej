@@ -16,7 +16,13 @@ require('./configs/db.config');
 const indexRouter = require('./routes/home.routes');
 const authRouter    = require('./routes/auth.routes')
 const categoriaRouter = require('./routes/categoria.routes') 
-const productoRouter = require('./routes/producto.routes')
+const productosRouter = require('./routes/productos.routes')
+const ayudaRouter = require('./routes/ayuda.routes')
+const carritoRouter = require('./routes/carrito.routes')
+const contactoRouter = require('./routes/contacto.routes')
+const miscomprasRouter = require('./routes/miscompras.routes')
+const nosotrosRouter = require('./routes/nosotros.routes')
+
 
 const app = express();
 
@@ -49,7 +55,13 @@ app.use((req, res, next) => {
 app.use('/', indexRouter)
 app.use('/', authRouter)
 app.use('/', categoriaRouter)
-app.use('/', productoRouter)
+app.use('/', productosRouter)
+app.use('/', ayudaRouter)
+app.use('/', carritoRouter)
+app.use('/', contactoRouter)
+app.use('/', miscomprasRouter)
+app.use('/', nosotrosRouter)
+
 
 // Detectar rutas faltantes y reenviar un error
 app.use((req, res, next) => next(createError(404)));

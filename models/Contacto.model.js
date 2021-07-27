@@ -10,10 +10,10 @@ const Schema            = mongoose.Schema
 
 //SCHEMA
 
-const categoriaSchema        = new Schema({
+const contactoSchema        = new Schema({
     
-    nombre: String,
-    image: String
+    Texto: String,
+   
     
 
 
@@ -26,8 +26,8 @@ const categoriaSchema        = new Schema({
 
 //MODELO
 
-const Categoria = mongoose.model("Categoria", categoriaSchema)
+const Contacto = mongoose.model("Contacto", contactoSchema)
 
 //EXPORTACIÓN
 
-module.exports = Categoria
+module.exports = Contacto

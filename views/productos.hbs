@@ -1,0 +1,38 @@
+<h1> Productos </h1>
+
+<hr />
+<a href="/categoria/:categoria/productos">Ir atrás</a>
+
+
+
+{{#each productos}}
+
+
+<div class="col-md-4">
+    <div class="card">
+        <img class="card-img-top" src="{{this.image}}" alt="{{this.nombre}}" />
+        <div class="card-body">
+            <h2 class="card-title">{{this.nombre}}</h2>
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <ul>
+        <li>nombre:{{this.nombre}}</li>
+        <li>modelo:{{this.modelo}}</li>
+        <li>image:{{this.image}}</li>
+        <li>medidas:{{this.medidas}}</li>
+        <li>color:{{this.color}}</li>
+        <li>capacidad:{{this.capacidad}}</li>
+        <li>conectividad:{{this.conectividad}}</li>
+        <li>multimedia:{{this.multimedia}}</li>
+        <li>precio:{{this.precio}}</li>
+    </ul>
+
+</div>
+
+{{/each}}
+
+</ul>

@@ -129,7 +129,7 @@ if (!autenticacionVerificada) {
 
 //POST - CERRAR SESIÓN
 
-router.post('/desconectado', (req, res) => {
+router.post('/salir', (req, res) => {
     req.session.destroy(e => {
       if(e){
         console.log(e)
@@ -138,8 +138,8 @@ router.post('/desconectado', (req, res) => {
     })
   
   })
-            
 
+  
 
 
 module.exports = router

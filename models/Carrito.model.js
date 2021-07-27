@@ -10,10 +10,10 @@ const Schema            = mongoose.Schema
 
 //SCHEMA
 
-const categoriaSchema        = new Schema({
+const carritoSchema        = new Schema({
     
-    nombre: String,
-    image: String
+    Texto: String,
+   
     
 
 
@@ -26,8 +26,8 @@ const categoriaSchema        = new Schema({
 
 //MODELO
 
-const Categoria = mongoose.model("Categoria", categoriaSchema)
+const Carrito = mongoose.model("Carrito", carritoSchema)
 
 //EXPORTACIÓN
 
-module.exports = Categoria
+module.exports = Carrito

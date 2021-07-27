@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{title}}</title>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li id="to-left">
-          <p><a href="/"> FREEBUY.COM.MX  </a></p>
-        </li>
-        <li id="to-right">
-          {{#if usuarioActual }}
-           
-            <a href="/perfilusuario">Mi perfil</a>
-            <form id="logout-form" action="/salir" method="POST">
-              <button>Cerrar Sesión</button>
-            </form> 
-          {{else}}
-             <a href="/registro">Registrarse</a> <span> | </span>
-            <a href="/acceso">Iniciar sesión</a> <span> | </span>
-          {{/if}}
-        </li>
-      </ul>
-    </nav>
-    {{{body}}}
-    <script src="/javascripts/script.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
+<body>
+ <nav class="nav-bar">
+     
+  <a href="/"> FREEBUY.COM.MX </a>
+      <div>
+       <a href="/nosotros">Nosotros</a> <span> | </span>
+       <a href="/contacto">Contacto</a> 
+    </div>
+
+</nav>
+  {{#if usuarioActual }}
+  <nav>
+    <ul>
+      <li id="to-right">
+        <a href="/perfilusuario">Mi perfil</a> <span> | </span>
+        
+
+        <a href="/miscompras">Mis compras</a> <span> | </span>
+        <a href="/carrito">Carrito</a> <span> | </span>
+
+        <form id="logout-form" action="/salir" method="POST">
+          <button>Cerrar Sesión</button>
+        </form>
+      </li>
+      <li id="to-left">
+        <a href="/categoria">Categorías</a> <span> | </span>
+        <a href="/ayuda">Ayuda</a> 
+      </li>
+
+      {{else}}
+      <li id="to-right">
+        <a href="/registro">Registrarse</a> <span> | </span>
+        <a href="/acceso">Iniciar sesión</a> 
+        {{/if}}
+      </li>
+    </ul>
+  </nav>
+
+
+
+  {{{body}}}
+  <script src="/javascripts/script.js"></script>
+</body>
+
 </html>
