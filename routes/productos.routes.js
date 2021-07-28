@@ -27,13 +27,13 @@ router.get("/categoria/:categoriaId", (req, res) => {
     ///obtener id . findbyid
     
     const { categoriaId } = req.params
+
     Categoria.findById(categoriaId)
-        .populate("productos")
         .then(categoriaEncontrada => {
             console.log(`Categoria Encontrada:`, categoriaEncontrada)
             res.render("categprod", {
-                categoria: categoriaEncontrada
-                
+                categoria: categoriaEncontrada,
+                idCategoria: categoriaEncontrada._id   
             })
 
         }) 

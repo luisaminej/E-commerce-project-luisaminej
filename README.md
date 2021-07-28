@@ -11,6 +11,35 @@
 - Utilizar un catálogo de productos real (cuidar datos sensibles)
 
 
+## Instalación
+
+- Clonar el repositorio
+
+- Instalar las dependencias
+
+```shell
+npm install
+```
+
+- Crear un archivo `.env` que permita leer variables de entorno. Incluir:
+
+```
+ENV=development
+PORT=3000
+SESS_SECRET=helloworld
+MONGODB_URI=mongodb://localhost:27017/[nombre de la base de datos]
+```
+
+- Poblar la base de datos dentro de la carpeta `seeds` y aplicar dos comandos:
+
+```shell
+node categoria.seeds.js
+node productos.seeds.js
+```
+
+
+
+
 ## Modelos de Base de Datos
 
 - Usuario

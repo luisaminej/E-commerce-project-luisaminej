@@ -4,7 +4,7 @@ const Categoria             = require('../models/Categoria.model')
 
 require('dotenv').config()
 
-const connectDB     =require('../db/index')
+const connectDB = require('../db/index')
 
 connectDB()
 
@@ -58,11 +58,11 @@ const categoria = [
 ] 
     
     
-    Categoria.create(categoria)
-    .then(() => {
+Categoria.create(categoria)
+  .then(() => {
         console.log("Categorias creadas")
         mongoose.connection.close()
     })
-    .catch(e => console.log(e))
+  .catch(e => console.log(e))
 
     
