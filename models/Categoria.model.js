@@ -13,7 +13,8 @@ const Schema            = mongoose.Schema
 const categoriaSchema        = new Schema({
     
     nombre: String,
-    image: String
+    image: String,
+    productos: Array,
     
 
 

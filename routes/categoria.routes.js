@@ -10,6 +10,8 @@ const Productos = require('./../models/Productos.model')
 
 
 
+
+
 //Se crea la ruta  para ver las categorias
 router.get("/categoria", (req, res) => { 
 
@@ -24,19 +26,24 @@ router.get("/categoria", (req, res) => {
 })
 //Crear la ruta para la categoría con sus productos
 
-router.get("/categoria/:categoria", (req, res) => {
+router.get("/categoria/:categoriaId", (req, res) => {
+    ///obtener id . findbyid
     
-
-    Productos.find()
-        .then(encontrarProductos => {
-            console.log(`Encontrar categoria:`, encontrarProductos)
+    const { categoriaId } = req.params
+    Categoria.findById(categoriaId)
+        .populate("productos")
+        .then(categoriaEncontrada => {
+            console.log(`Categoria Encontrada:`, categoriaEncontrada)
             res.render("categprod", {
-                productos: encontrarProductos
+                categoria: categoriaEncontrada
+                
             })
 
         }) 
 
     })
+
+    
 
 
 module.exports = router

@@ -10,38 +10,43 @@
 </head>
 
 <body>
- <nav class="nav-bar">
-     
-  <a href="/"> FREEBUY.COM.MX </a>
-      <div>
-       <a href="/nosotros">Nosotros</a> <span> | </span>
-       <a href="/contacto">Contacto</a> 
+  <nav class="nav-bar">
+
+    <a href="/"> FREEBUY.COM.MX </a>
+    <div>
+      <a href="/nosotros">Nosotros</a> <span> | </span>
+      <a href="/contacto">Contacto</a>
     </div>
 
-</nav>
+  </nav>
+{{!-- 
+  <a href="https://api.whatsapp.com/send?phone=+525513192695&text=¡Hola!%20dejanos%20tu%20mensaje,%20nosotros%20responderemos%20en%20breve."><img
+      src="images/whatsapp1.png " width="25px" height="25px"></a> --}}
   {{#if usuarioActual }}
   <nav>
     <ul>
       <li id="to-right">
         <a href="/perfilusuario">Mi perfil</a> <span> | </span>
-        
+
 
         <a href="/miscompras">Mis compras</a> <span> | </span>
-        <a href="/carrito">Carrito</a> <span> | </span>
+        <a href="/carrito"><img src="/images/shopping-cart.png" alt="carrito logo" width="25px" height="25px"></a>
+        <span> | </span>
 
-        <form id="logout-form" action="/salir" method="POST">
-          <button>Cerrar Sesión</button>
-        </form>
+        <a href="/salir">Cerrar Sesión</a>
+        {{!-- Qué necesita para funcionar el form, POST --}}
+
+
       </li>
       <li id="to-left">
         <a href="/categoria">Categorías</a> <span> | </span>
-        <a href="/ayuda">Ayuda</a> 
+        <a href="/ayuda">Ayuda</a>
       </li>
 
       {{else}}
       <li id="to-right">
         <a href="/registro">Registrarse</a> <span> | </span>
-        <a href="/acceso">Iniciar sesión</a> 
+        <a href="/acceso">Iniciar sesión</a>
         {{/if}}
       </li>
     </ul>
@@ -51,6 +56,9 @@
 
   {{{body}}}
   <script src="/javascripts/script.js"></script>
+
+  
 </body>
+
 
 </html>

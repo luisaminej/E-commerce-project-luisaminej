@@ -5,7 +5,9 @@ const Schema            = mongoose.Schema
 
 //SCHEMA
 
-const productoSchema        = new Schema({
+const productosSchema        = new Schema({
+    
+    categoria: [{ type: Schema.Types.ObjectId, ref: "Categoria" }],
     nombre: String,
     modelo: String,
     image: String,
@@ -15,7 +17,8 @@ const productoSchema        = new Schema({
     conectividad: String,
     multimedia: String,
     precio: String
-
+    
+    
    
 
 },
@@ -27,8 +30,8 @@ const productoSchema        = new Schema({
 
 //MODELO
 
-const Producto = mongoose.model("Producto", productoSchema)
+const Productos = mongoose.model("Productos", productosSchema)
 
 //EXPORTACIÓN
 
-module.exports = Producto
+module.exports = Productos

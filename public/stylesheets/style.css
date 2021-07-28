@@ -1,6 +1,6 @@
 html, body {
-    margin: 50px;
-    padding: 50px;
+    margin: 25px;
+    padding: 25px;
 
     font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
   }
@@ -8,7 +8,7 @@ html, body {
   a {
     color: #00b7ff;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 2em;
   }
   
   form {
@@ -66,23 +66,25 @@ html, body {
   
   ul {
     
-    height: 30px;
+    height: 25px;
     padding: 1em 0;
     list-style-type: none;
   }
   
   ul li {
-    line-height: 20px;
+    line-height: 1px;
+    list-style-type: none;
   }
   
   #to-right {
-    padding: 1em;
+    padding: 0;
     float: right;
+    list-style-type: none;
   }
   
   #to-right span {
-    color: #43a3e6;
-    font-size: 1.5em;
+    color: #0d0d0e;
+    font-size: 2em;
   }
   
   #form h2 {
@@ -92,6 +94,11 @@ html, body {
   
   #to-left {
     float: left;
+    padding: 0;
+  }
+  #to-left span {
+    color: #0d0d0e;
+    font-size: 2em;
   }
   
   #to-left p a {
@@ -128,11 +135,10 @@ html, body {
    box-sizing: border-box;
  }
 
- #categoria  div {
+ .container > div {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
+ 
 }
 
 .nav-bar {
@@ -155,9 +161,21 @@ html, body {
   font-size: 1em;
   text-decoration: none;
   color: rgb(14, 47, 233);
-  
-  
 
+}
+.footer {
+  float: inline-end;
+}
+.footer img {
+  
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+    background-position: 50%;
+    align-items: flex-end;
+   
+    
+    
 }
 
 
