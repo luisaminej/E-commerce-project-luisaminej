@@ -20,8 +20,11 @@ const productosRouter = require('./routes/productos.routes')
 const ayudaRouter = require('./routes/ayuda.routes')
 const carritoRouter = require('./routes/carrito.routes')
 const contactoRouter = require('./routes/contacto.routes')
-const miscomprasRouter = require('./routes/miscompras.routes')
+
 const nosotrosRouter = require('./routes/nosotros.routes')
+
+
+
 
 
 const app = express();
@@ -59,8 +62,9 @@ app.use('/', productosRouter)
 app.use('/', ayudaRouter)
 app.use('/', carritoRouter)
 app.use('/', contactoRouter)
-app.use('/', miscomprasRouter)
 app.use('/', nosotrosRouter)
+
+
 
 
 // Detectar rutas faltantes y reenviar un error

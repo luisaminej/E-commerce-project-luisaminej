@@ -31,7 +31,7 @@ router.get("/categoria/:categoriaId", (req, res) => {
     
     const { categoriaId } = req.params
     Categoria.findById(categoriaId)
-        .populate("productos")
+        .populate("productos") //productos viene del model categoria
         .then(categoriaEncontrada => {
             console.log(`Categoria Encontrada:`, categoriaEncontrada)
             res.render("categprod", {
@@ -43,7 +43,7 @@ router.get("/categoria/:categoriaId", (req, res) => {
 
     })
 
-    
+
 
 
 module.exports = router

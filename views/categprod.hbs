@@ -4,25 +4,24 @@
 <hr />
 
 {{#with categoria}}
-{{this.nombre}}
+<h2>{{this.nombre}}</h2>
 
+<h2>{{this.productos}}</h2>
 
-{{this.producto.nombre}}
-
-<a href="/categoria/{{categoria._id}}/{{productos._id}}">
+{{!-- <a href="/categoria/{{categoria._id}}/{{thi.categoria.productos._id}}">
 
     <section class="container" id="categoria">
         <div>
             <article class="service-box">
 
-                <img src="{{this.productos.image}}" alt="{{this.productos.nombre}}" />
-                <h2>{{this.productos.nombre}}</h2>
+                <img src="{{.categoria.productos}}" alt="{{this.categoria.productos.nombre}}" />
+                <h2>{{this.categoria.productos}}</h2>
             </article>
         </div>
     </section>
 
 
-</a>
+</a> --}}
 
 
 

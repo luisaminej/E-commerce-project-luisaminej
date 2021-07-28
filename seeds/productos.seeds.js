@@ -9,7 +9,7 @@ connectDB()
 
 const productos = [
     {
-      categoria: "60ff431d6429db2c08e18f9d",
+      categoria: ["60ff431d6429db2c08e18f9d"],
       nombre: "Computadora All in One Lenovo IdeaCentre 3 24IIL5",
       modelo: "F0FR005-CLD",
       image: "https://www.officedepot.com.mx/medias/100038735.jpg-1200ftw?context=bWFzdGVyfHJvb3R8Mzk3ODI4fGltYWdlL2pwZWd8aDcxL2hiZi8xMDA3NjczODE5MTM5MC8xMDAwMzg3MzUuanBnXzEyMDBmdHd8MDMyZjc5YmYwOWI2YjllYmVkZDhkNzlmZWY2NzUzNDVlNjY1YmY3ZTc2NWFkN2U4MjBiNjgwOTI3N2RlZjg2ZQ",
@@ -23,7 +23,7 @@ const productos = [
       
     },
     {
-        categoria: "60ff431d6429db2c08e18fa0",
+        categoria: ["60ff431d6429db2c08e18fa0"],
         nombre: "Laptop Gamer Lenovo Legion Y540-15IRH",
         modelo: "81SX00V-3LM",
         image: "https://www.officedepot.com.mx/medias/100038743.jpg-1200ftw?context=bWFzdGVyfHJvb3R8ODUyNzU0fGltYWdlL2pwZWd8aGFhL2hmOC8xMDA5OTI2NzE3NDQzMC8xMDAwMzg3NDMuanBnXzEyMDBmdHd8ZjFhMDQ2ZTA1YTRjNzY0YWI0NzE2NGFiZDcyZGMyNTBhMWRkMjMzZjhhM2Y3MDU4OGMzMThjMDU0YjNkMWY5ZQ",
@@ -36,7 +36,7 @@ const productos = [
         
       },
       {
-        categoria: "60ff431d6429db2c08e18fa3",
+        categoria: ["60ff431d6429db2c08e18fa3"],
         nombre: "iPhone 11",
         modelo: "81SX00V-3LM",
         image: "https://www.telcel.com/content/dam/telcelcom/dispositivos/Apple/iPhone11/imagenes/morado/dual.jpg/jcr:content/renditions/cq5dam.web.250.470.jpeg",
@@ -49,7 +49,7 @@ const productos = [
         
       },
       {
-        categoria: "60ff431d6429db2c08e18fa2",
+        categoria: ["60ff431d6429db2c08e18fa2"],
         nombre: "Proyector BenQ",
         modelo: "MS550 / ASIN: B07DD13XL1",
         image: "https://images-na.ssl-images-amazon.com/images/I/61A1TLmJJCL._AC_SL1000_.jpg",
@@ -62,7 +62,7 @@ const productos = [
         
       },
       {
-        categoria: "60ff431d6429db2c08e18fa1",
+        categoria: ["60ff431d6429db2c08e18fa1"],
         nombre: "Monitor Gamer Dell SE2417HGX",
         modelo: "SE2417HGX",
         image: "https://www.officedepot.com.mx/medias/100030936.jpg-1200ftw?context=bWFzdGVyfHJvb3R8NTQ2MjkzfGltYWdlL2pwZWd8aDg1L2g0Mi8xMDA2NzQ5NTg3ODY4Ni8xMDAwMzA5MzYuanBnXzEyMDBmdHd8ZWQxZWUxMDU0MDA2MmQ3ZTQ5NGFmM2NmNmI2MDVlOWMyYTQzZDgyZTY4YTkzYTQ1YzhjNmFmMzc1MmY1MzZhYQ",
@@ -75,7 +75,7 @@ const productos = [
         
       },
       {
-        categoria: "60ff431d6429db2c08e18f9e",
+        categoria: ["60ff431d6429db2c08e18f9e"],
         nombre: "Xtreme PC Gamer Geforce",
         modelo: "GT 1030",
         image: "https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/mg/gm/3pp/asr/1c1c3c7f-dcc4-4215-9aeb-684182a7cfc2.4ff5abb5efc42e2d1dc4db9830530742.png?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
@@ -88,7 +88,7 @@ const productos = [
         
       },
       {
-        categoria: "60ff431d6429db2c08e18fa4",
+        categoria: ["60ff431d6429db2c08e18fa4"],
         nombre: "iPad 8 Apple",
         modelo: "MYL92LZ/A",
         image: "https://www.officedepot.com.mx/medias/100000681.jpg-1200ftw?context=bWFzdGVyfHJvb3R8NDEyNzUzfGltYWdlL2pwZWd8aDZkL2hjZS85OTQ5Mjc0ODMyOTI2LmpwZ3w2ZmQxNzI5MTE2NDA4YjQyYzYyMjg0OGY1MDkxNTA4NjAwNmRlNTk1ZDhhNWUxYTIzODk1NWYxM2VjODZjOTBk",
@@ -101,7 +101,7 @@ const productos = [
         
       },
       {
-        categoria: "60ff431d6429db2c08e18f9f",
+        categoria: ["60ff431d6429db2c08e18f9f"],
         nombre: "Disco duro interno Seagate",
         modelo: "ST2000DM008 2 TB PC 3.5",
         image: "https://www.officedepot.com.mx/medias/100000681.jpg-1200ftw?context=bWFzdGVyfHJvb3R8NDEyNzUzfGltYWdlL2pwZWd8aDZkL2hjZS85OTQ5Mjc0ODMyOTI2LmpwZ3w2ZmQxNzI5MTE2NDA4YjQyYzYyMjg0OGY1MDkxNTA4NjAwNmRlNTk1ZDhhNWUxYTIzODk1NWYxM2VjODZjOTBk",
