@@ -2,22 +2,16 @@ const mongoose          = require("mongoose")
 const Schema            = mongoose.Schema
 
 
-
-
-
-
-
-
 //SCHEMA
 
 const categoriaSchema        = new Schema({
     
     nombre: String,
     image: String,
-    productos: Array,
-    
-
-
+    productos: [{
+        type: Schema.Types.ObjectId,
+        ref: "Productos"
+    }],
 },
 
 {    
