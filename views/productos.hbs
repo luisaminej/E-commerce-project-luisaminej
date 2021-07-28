@@ -1,19 +1,16 @@
 <h1> Productos </h1>
 
 <hr />
-<a href="/categoria/:categoriaId">Ir atrás</a>
 
-{{#with categoria}}
+{{#with productos}}
 
-{{#each productos}}
-
+<a href="/categoria/{{categoria._id}}">Ir atrás</a>
 
 
-        <img src="{{this.image}}" alt="{{this.nombre}}" />
-     
-            <h2>{{this.nombre}}</h2>
-     
 
+<img src="{{this.image}}" alt="{{this.nombre}}" />
+
+<h2>{{this.nombre}}</h2>
 
 <div>
     <ul>
@@ -30,7 +27,6 @@
 
 </div>
 
-{{/each}}
 {{/with}}
 
 </ul>

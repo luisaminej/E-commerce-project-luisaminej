@@ -6,6 +6,35 @@ const mongoose = require("mongoose")
 
 const Productos = require('../models/Productos.model')
 
+const Categoria = require('../models/Categoria.model')
+
+
+
+router.get("/categoria/:categoriaId/:productoId", (req, res) => { 
+
+    const { categoriaId, productoId } = req.params
+
+    Categoria.findById(categoriaId)
+        .then((categoriaEncontrada) => {
+            
+            Productos.findById(productoId)
+                .populate("categoria")
+                .then((productoEncontrado) => {
+
+                    res.render("productos", {
+                        productos: productoEncontrado
+
+                    })
+                }) 
+
+        })
+        .catch(e => {
+            console.log(e)
+
+            return res.render("error")
+
+        })
+})
 
 
 
@@ -30,7 +59,6 @@ router.get("/categoria/:categoriaId", (req, res) => {
 
     Categoria.findById(categoriaId)
         .then(categoriaEncontrada => {
-            console.log(`Categoria Encontrada:`, categoriaEncontrada)
             res.render("categprod", {
                 categoria: categoriaEncontrada,
                 idCategoria: categoriaEncontrada._id   
@@ -41,19 +69,6 @@ router.get("/categoria/:categoriaId", (req, res) => {
     })
 
     
-router.get("categoria/:categoriaId/:productoId", (req, res) => { 
 
-    const { productoId } = req.params
-
-    Productos.findById(productoId)
-        .populate("categoria")
-        .then((productoEncontrado) => {
-            console.log(`Productos Encontrados:`, productoEncontrado)
-                res.render("productos", {
-                    productos: productoEncontrado
-                })
-        }) 
-        .catch(e => console.log(e))
-})
 
 module.exports = router
