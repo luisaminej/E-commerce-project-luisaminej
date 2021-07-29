@@ -3,33 +3,67 @@
 <a href="/perfilusuario">Ir atrás</a>
 <hr />
 
+
 {{#with categoria}}
 
 
-    {{this.nombre}}
-    {{this.producto.nombre}}
 
-    <section class="container" id="categoria">
-        {{!-- EMPEZAMOS A LEER TODOS LOS OBJETOS DE ESA CATEGORÍA --}}
-        
-            {{#each productos}}
-            
-                <div>
-                    <article class="service-box">
-                        
-                        <a href="/categoria/{{this.categoria}}/{{this._id}}">
-                            <img src="{{this.image}}" alt="{{this.nombre}}" />
-                        </a>
-                        
+<strong>
+  <h1>{{this.nombre}}</h1>
 
-                        <a href="/categoria/{{this.categoria}}/{{this._id}}">
-                            <h2>{{this.nombre}}</h2>
-                        </a>
-                    </article>
-                </div>
-            
-            {{/each}}
-        
-    </section>
+  </a>
+</strong>
+<!--Section: Products v.3-->
+<section class="text-center mb-4">
+
+  <!--Grid row-->
+  <div class="row wow fadeIn">
+    {{#each productos}}
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-4 ">
+
+      <!--Card-->
+      <div class="card">
+
+        <!--Card image-->
+        <div class="view overlay">
+          <img src="{{this.image}}" class="card-img-top" width="300" height="400" alt="">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+
+        <!--Card content-->
+        <div class="card-body text-center">
+          <!--Category & Title-->
+
+
+          </a>
+          <h5>
+            <strong>
+              <a href="/categoria/{{this.categoria}}/{{this._id}}" class="dark-grey-text" "text-center">{{this.nombre}}
+
+              </a>
+            </strong>
+          </h5>
+
+          <h4 class="font-weight-bold blue-text">
+            <strong>{{this.precio}}</strong>
+          </h4>
+
+        </div>
+        <!--Card content-->
+
+      </div>
+      <!--Card-->
+
+    </div>
+    {{/each}}
+  </div>
+</section>
+
+
+
 
 {{/with}}

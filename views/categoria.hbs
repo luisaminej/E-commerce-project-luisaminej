@@ -1,24 +1,58 @@
+
+
 <h1> Categorías </h1>
-
-
-
-{{#each categoria}}
-
-<a href="/categoria/{{this._id}}">
-    {{!-- <a href="https://www.github.com"> --}}
-
-        <section class="container">
-            <div>
-                <article class="service-box">
-                    <img src="{{this.image}}" alt="{{this.nombre}}" />
-                    <h2>{{this.nombre}}</h2>
-
-                </article>
-            </div>
-        </section>
-    </a>
-    {{/each}}
-
-
-    <a href="/perfilusuario">Ir atrás</a>
+<a href="/perfilusuario">Ir atrás</a>
     <hr />
+
+
+
+     <section class="text-center mb-4">
+
+        <!--Grid row-->
+        <div class="row wow fadeIn">
+            {{#each categoria}}
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4">
+
+            <!--Card-->
+            <div class="card">
+
+              <!--Card image-->
+              <div class="view overlay">
+                  <a href="/categoria/{{this._id}}">
+                <img src="{{this.image}}" class="card-img-top" width="300" height="500" alt="imagen">
+                </a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!--Card image-->
+
+              <!--Card content-->
+              <div class="card-body text-center">
+                <!--Category & Title-->
+                 <h3>
+                 <strong>
+                    <a href="/categoria/{{this._id}}" class="dark-grey-text" "text-center">{{this.nombre}}
+                      
+                    </a>
+                 </strong>
+                 </h3>
+               
+
+               
+
+              </div>
+              <!--Card content-->
+
+            </div>
+            <!--Card-->
+ 
+          </div>
+         {{/each}}
+        </div>
+        
+     </section>
+
+
+    

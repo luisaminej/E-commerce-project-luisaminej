@@ -2,7 +2,7 @@
 
 <hr />
 
-{{#with productos}}
+{{!-- {{#with productos}}
 
 <a href="/categoria/{{categoria._id}}">Ir atrás</a>
 
@@ -29,4 +29,92 @@
 
 {{/with}}
 
-</ul>
+</ul> --}}
+
+<main class="mt-5 pt-4">
+    <div class="container dark-grey-text mt-5">
+
+        <!--Grid row-->
+        <div class="row wow fadeIn">
+
+            <!--Grid column-->
+            <div class="col-md-6 mb-4">
+                {{#with productos}}
+
+                <a href="/categoria/{{categoria._id}}">Ir atrás</a>
+
+
+                <img src="{{this.image}}" class="img-fluid" width="900" height="1500" "text-center" alt="">
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-6 mb-4">
+
+                <!--Content-->
+                <div class="p-4">
+
+                    <div class="mb-3">
+                        <a href="/categoria">
+                            <span class="badge purple mr-1">{{this.categoria}}</span>
+                        </a>
+                        <a href="/">
+                            <span class="badge blue mr-1">Reacondicionado</span>
+                        </a>
+
+                    </div>
+                    <h1 class="lead font-weight-bold">{{this.nombre}} {{this.modelo}}</h1>
+
+                    <p class="lead">
+                        <span class="mr-1">
+                            <del>{{this.precio}}</del>
+                        </span>
+                        <span>{{this.precio}}</span>
+                    </p>
+                    <form class="d-flex justify-content-left">
+                        <!-- Default input -->
+                        <input type="number" value="1" aria-label="Search" class="form-control" style="width: 100px">
+                        <button class="btn btn-primary btn-md my-0 p" type="submit">Agregar a carrito
+                            <i class="fas fa-shopping-cart ml-1"></i>
+                        </button>
+
+                    </form>
+                    <hr />
+
+
+                    <div class="row">
+                        <div class="col-sm-2 p-3 border col-md-6">Medidas:</div>
+                        <div class="col-sm-12 offset-sm-2 col-md-6 p-2 border offset-md-0">{{this.medidas}}</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-2 p-3 border col-md-6">Color:</div>
+                        <div class="col-sm-12 offset-sm-2 col-md-6 p-2 border offset-md-0">{{this.color}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2 p-3 border col-md-6">Capacidad:</div>
+                        <div class="col-sm-12 offset-sm-2 col-md-6 p-2 border offset-md-0">{{this.capacidad}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2 p-3 border col-md-6">Conectividad:</div>
+                        <div class="col-sm-12 offset-sm-2 col-md-6 p-2 border offset-md-0">{{this.conectividad}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2 p-3 border col-md-6">Multimedia:</div>
+                        <div class="col-sm-12 offset-sm-2 col-md-6 p-2 border offset-md-0">{{this.multimedia}}</div>
+                    </div>
+
+
+
+
+
+                </div>
+                <!--Content-->
+
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+        {{/with}}

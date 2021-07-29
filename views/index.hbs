@@ -1,14 +1,40 @@
 
-<div
-    class="p-5 text-center bg-image"style="background-image: url('https://scottdenholm.com/wp-content/uploads/2017/08/laptop-wallpaper_mock_they-called-it-paradise_scott-denholm-art.jpg');
-      height: 400px;">
-    <div class="mask" style="background-color: rgba(199, 194, 194, 0.6);">
-      <div class="d-flex justify-content-center align-items-center h-100">
-        <div class="text-white">
-          <h1 class="mb-3">Encuentra todo lo que buscas</h1>
-          <h4 class="mb-3">Por un precio más barato</h4>
-          
-        </div>
-      </div>
+  {{#if usuarioActual}}
+  
+ 
+
+{{else}}
+  <h1>Todavía no hay un usuario registrado</h1>
+{{/if}}
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://scottdenholm.com/wp-content/uploads/2017/08/laptop-wallpaper_mock_they-called-it-paradise_scott-denholm-art.jpg" width="3200" height="2001" class="img-fluid" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://pcredcom.com/blog/wp-content/uploads/2020/06/tipos-de-computadoras.jpg"width="3200" height="2001" class="img-fluid" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://kcrentas.com.mx/wp-content/uploads/2018/10/arrendamiento-de-computadoras-oc-31-compressor.jpg" width="3200" height="2001" class="img-fluid" alt="...">
     </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+ 
+
+

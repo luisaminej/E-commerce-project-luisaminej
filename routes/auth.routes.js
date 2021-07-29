@@ -129,7 +129,7 @@ if (!autenticacionVerificada) {
 
 //POST - CERRAR SESIÓN
 
-router.post('/salir', (req, res) => {
+router.get('/salir', (req, res) => {
     req.session.destroy(e => {
       if(e){
         console.log(e)

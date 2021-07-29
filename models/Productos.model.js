@@ -16,7 +16,9 @@ const productosSchema        = new Schema({
     capacidad: String,
     conectividad: String,
     multimedia: String,
-    precio: String
+    preciolista: String,
+    precio: String,
+
     
     
    

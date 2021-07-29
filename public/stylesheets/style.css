@@ -1,3 +1,7 @@
+body {
+  background-color: #4646ea;
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -53,15 +57,15 @@
 .login {
   margin: 0;
   padding: 0;
-  background-color: #17a2b8;
+  background-color: #4646ea;
   height: 100vh;
 }
 #login .container #login-row #login-column #login-box {
   margin-top: 120px;
   max-width: 600px;
   height: 320px;
-  border: 1px solid #9C9C9C;
-  background-color: #EAEAEA;
+  border: 1px solid #edbc0d;
+  background-color: #edbc0d;
 }
 #login .container #login-row #login-column #login-box #login-form {
   padding: 20px;
@@ -69,3 +73,25 @@
 #login .container #login-row #login-column #login-box #login-form #register-link {
   margin-top: -85px;
 }
+.carousel {
+  height: 60vh;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .carousel {
+    height: 200vh;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .carousel {
+    height: 100vh;
+  }
+}
+.view,body,html{height:100%}.carousel{height:100%}.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item{height:100%}@media (max-width:776px){.carousel{height:100%}}.page-footer{background-color:#929FBA}

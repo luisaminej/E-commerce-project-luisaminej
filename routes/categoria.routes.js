@@ -40,6 +40,7 @@ router.get("/categoria/:categoriaId", (req, res) => {
             })
 
         }) 
+        .catch(e => console.log(e))
 
     })
 
