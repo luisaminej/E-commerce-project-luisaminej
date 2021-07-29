@@ -4,25 +4,32 @@
 <hr />
 
 {{#with categoria}}
-<h2>{{this.nombre}}</h2>
 
-<h2>{{this.productos}}</h2>
 
-{{!-- <a href="/categoria/{{categoria._id}}/{{thi.categoria.productos._id}}">
+    {{this.nombre}}
+    {{this.producto.nombre}}
 
     <section class="container" id="categoria">
-        <div>
-            <article class="service-box">
+        {{!-- EMPEZAMOS A LEER TODOS LOS OBJETOS DE ESA CATEGORÍA --}}
+        
+            {{#each productos}}
+            
+                <div>
+                    <article class="service-box">
+                        
+                        <a href="/categoria/{{this.categoria}}/{{this._id}}">
+                            <img src="{{this.image}}" alt="{{this.nombre}}" />
+                        </a>
+                        
 
-                <img src="{{.categoria.productos}}" alt="{{this.categoria.productos.nombre}}" />
-                <h2>{{this.categoria.productos}}</h2>
-            </article>
-        </div>
+                        <a href="/categoria/{{this.categoria}}/{{this._id}}">
+                            <h2>{{this.nombre}}</h2>
+                        </a>
+                    </article>
+                </div>
+            
+            {{/each}}
+        
     </section>
-
-
-</a> --}}
-
-
 
 {{/with}}
