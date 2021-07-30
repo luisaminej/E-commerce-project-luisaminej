@@ -39,7 +39,7 @@ const productos = [
 
   {
     _id:"61030b9263f9cd1668bb61eb",
-    categoria: "61030b9263f9cd1668bb61eb",
+    categoria: "6101e1c9c25ecc14bf7b57b4",
     nombre: "Laptop Gamer Lenovo Legion Y540-15IRH",
     modelo: "81SX00V-3LM",
     image: "https://www.officedepot.com.mx/medias/100038743.jpg-1200ftw?context=bWFzdGVyfHJvb3R8ODUyNzU0fGltYWdlL2pwZWd8aGFhL2hmOC8xMDA5OTI2NzE3NDQzMC8xMDAwMzg3NDMuanBnXzEyMDBmdHd8ZjFhMDQ2ZTA1YTRjNzY0YWI0NzE2NGFiZDcyZGMyNTBhMWRkMjMzZjhhM2Y3MDU4OGMzMThjMDU0YjNkMWY5ZQ",
