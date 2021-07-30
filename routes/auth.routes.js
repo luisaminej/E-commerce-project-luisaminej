@@ -119,7 +119,7 @@ if (!autenticacionVerificada) {
     req.session.usuarioActual = usuarioEncontrado
 
     console.log("sesión actualidad", req.session)
-    return res.redirect("/perfilusuario")
+    return res.redirect("/")
 
 
    
