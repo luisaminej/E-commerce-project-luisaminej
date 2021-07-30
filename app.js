@@ -8,6 +8,8 @@ const favicon = require('serve-favicon');
 const cookieParser = require('cookie-parser');
 const hbs = require('hbs');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+
 
 // Aquí se configura la database
 require('./configs/db.config');
@@ -34,6 +36,7 @@ require("./configs/session.config")(app)
 
 // Configurar Express View engine 
 
+app.use(bodyParser.urlencoded({extended:true}))
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
@@ -63,6 +66,8 @@ app.use('/', ayudaRouter)
 app.use('/', carritoRouter)
 app.use('/', contactoRouter)
 app.use('/', nosotrosRouter)
+
+
 
 
 

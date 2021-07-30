@@ -10,6 +10,8 @@ const Categoria = require('../models/Categoria.model')
 
 
 
+
+
 router.get("/categoria/:categoriaId/:productoId", (req, res) => { 
 
     const { categoriaId, productoId } = req.params
@@ -67,6 +69,8 @@ router.get("/categoria/:categoriaId", (req, res) => {
         }) 
 
     })
+
+
 
     
 

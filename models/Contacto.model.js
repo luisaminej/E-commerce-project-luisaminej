@@ -12,7 +12,10 @@ const Schema            = mongoose.Schema
 
 const contactoSchema        = new Schema({
     
-    Texto: String,
+    Nombre: String,
+    Correo: String,
+    Comentario: String
+
    
     
 
