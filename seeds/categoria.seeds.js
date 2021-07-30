@@ -23,7 +23,7 @@ const categoria = [
       productos:["61030b9263f9cd1668bb61f3","61030b9263f9cd1668bb61f4"]
     },
     {
-      _id: "61030b9263f9cd1668bb61e9",
+      _id: "6101e1c9c25ecc14bf7b57b3",
       nombre: "Disco duro",
       image: "https://www.compulago.net/wp-content/uploads/erp/productos/110217082/1542942484440.jpg",
       productos: ["61030b9263f9cd1668bb61f7","61030b9263f9cd1668bb61f8"]

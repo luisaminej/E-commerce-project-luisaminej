@@ -153,6 +153,63 @@ const productos = [
     precio: "$3,659.00"
   },
   {
+    _id:"610417bdf253a6e26f895f72",
+    categoria: "6101e1c9c25ecc14bf7b57b5",
+    nombre: "Monitor 3",
+    modelo: "LC24F390FHLXZX 24",
+    image: "https://www.delltechnologies.com/content/dam/uwaem/production-design-assets/en/CSG/monitors/feature-promo1-980x366.jpg?w=640",
+    medidas: "55.52 cm (An.), 42.25 cm (Al.), 17.99 cm (Pr.), con soporte",
+    color: "Negro con detalles en plata",
+    capacidad: "No incluye",
+    conectividad: "Equipos de cómputo y dispositivos con interfaz HDMI y VGA",
+    multimedia: "Pantalla‎ plana de 24  pulgadas / Panel LCD antirreflejo con retroiluminación LED / Recubrimiento de pantalla antirreflejo, 3H hardness / Frecuencia de actualización de VGA 60Hz, HDMI 75Hz / Brillo 300 cd/m2 / Respuesta de 5 ms (normal); 1 ms (extremo) / Definición FHD de 1920 X 1080p / 16.7 millones de colores / Relación de Aspecto 16:9 / Tecnología AMD FreeSync / Tecnología ComfortView de Dell / Gama de colores NTSC al 72% (CIE 1931) / Gama de colores al 84% NTSC (CIE 1976) / Sin mercurio, cristal sin arsénico / 2 HDMI 1.4 / 1 VGA / 1 Salida de audio / Bisel color negro / Base sólida / Inclinación ajustable",
+    preciolista: "$4,999.00",
+    precio: "$3,659.00"
+  },
+  {
+    _id:"6104180af253a6e26f895f73",
+    categoria: "6101e1c9c25ecc14bf7b57b5",
+    nombre: "Monitor 4",
+    modelo: "LC24F390FHLXZX 24",
+    image: "https://www.ibs.it/mpimg/8712581767600_0_0_0_504_75.jpg",
+    medidas: "55.52 cm (An.), 42.25 cm (Al.), 17.99 cm (Pr.), con soporte",
+    color: "Negro con detalles en plata",
+    capacidad: "No incluye",
+    conectividad: "Equipos de cómputo y dispositivos con interfaz HDMI y VGA",
+    multimedia: "Pantalla‎ plana de 24  pulgadas / Panel LCD antirreflejo con retroiluminación LED / Recubrimiento de pantalla antirreflejo, 3H hardness / Frecuencia de actualización de VGA 60Hz, HDMI 75Hz / Brillo 300 cd/m2 / Respuesta de 5 ms (normal); 1 ms (extremo) / Definición FHD de 1920 X 1080p / 16.7 millones de colores / Relación de Aspecto 16:9 / Tecnología AMD FreeSync / Tecnología ComfortView de Dell / Gama de colores NTSC al 72% (CIE 1931) / Gama de colores al 84% NTSC (CIE 1976) / Sin mercurio, cristal sin arsénico / 2 HDMI 1.4 / 1 VGA / 1 Salida de audio / Bisel color negro / Base sólida / Inclinación ajustable",
+    preciolista: "$4,999.00",
+    precio: "$3,659.00"
+  },
+  {
+    _id:"61041822f253a6e26f895f74",
+    categoria: "6101e1c9c25ecc14bf7b57b5",
+    nombre: "Monitor 5",
+    modelo: "LC24F390FHLXZX 24",
+    image: "https://images.pcel.com/1600/Electronica-Monitores-AOC-20E1H-365130-Shtato243Tzdpa4F.jpg",
+    medidas: "55.52 cm (An.), 42.25 cm (Al.), 17.99 cm (Pr.), con soporte",
+    color: "Negro con detalles en plata",
+    capacidad: "No incluye",
+    conectividad: "Equipos de cómputo y dispositivos con interfaz HDMI y VGA",
+    multimedia: "Pantalla‎ plana de 24  pulgadas / Panel LCD antirreflejo con retroiluminación LED / Recubrimiento de pantalla antirreflejo, 3H hardness / Frecuencia de actualización de VGA 60Hz, HDMI 75Hz / Brillo 300 cd/m2 / Respuesta de 5 ms (normal); 1 ms (extremo) / Definición FHD de 1920 X 1080p / 16.7 millones de colores / Relación de Aspecto 16:9 / Tecnología AMD FreeSync / Tecnología ComfortView de Dell / Gama de colores NTSC al 72% (CIE 1931) / Gama de colores al 84% NTSC (CIE 1976) / Sin mercurio, cristal sin arsénico / 2 HDMI 1.4 / 1 VGA / 1 Salida de audio / Bisel color negro / Base sólida / Inclinación ajustable",
+    preciolista: "$4,999.00",
+    precio: "$3,659.00"
+  },
+  {
+    _id:"6104183ff253a6e26f895f75",
+    categoria: "6101e1c9c25ecc14bf7b57b5",
+    nombre: "Monitor 6",
+    modelo: "LC24F390FHLXZX 24",
+    image: "https://www.ktronix.com/medias/8806088231914-002-1400Wx1400H?context=bWFzdGVyfGltYWdlc3wxNzYwNTR8aW1hZ2UvanBlZ3xpbWFnZXMvaGM2L2hkNS84OTc5MzU1NTAwNTc0LmpwZ3w3ZTJjZDAwOGVlMTY3ODA2NzU3ZDJmNDg0OTgxNTUxODJmMzFjM2MwMjZkYTYyOTE5MDUxYTU4YjRlYWE4NTQz",
+    medidas: "55.52 cm (An.), 42.25 cm (Al.), 17.99 cm (Pr.), con soporte",
+    color: "Negro con detalles en plata",
+    capacidad: "No incluye",
+    conectividad: "Equipos de cómputo y dispositivos con interfaz HDMI y VGA",
+    multimedia: "Pantalla‎ plana de 24  pulgadas / Panel LCD antirreflejo con retroiluminación LED / Recubrimiento de pantalla antirreflejo, 3H hardness / Frecuencia de actualización de VGA 60Hz, HDMI 75Hz / Brillo 300 cd/m2 / Respuesta de 5 ms (normal); 1 ms (extremo) / Definición FHD de 1920 X 1080p / 16.7 millones de colores / Relación de Aspecto 16:9 / Tecnología AMD FreeSync / Tecnología ComfortView de Dell / Gama de colores NTSC al 72% (CIE 1931) / Gama de colores al 84% NTSC (CIE 1976) / Sin mercurio, cristal sin arsénico / 2 HDMI 1.4 / 1 VGA / 1 Salida de audio / Bisel color negro / Base sólida / Inclinación ajustable",
+    preciolista: "$4,999.00",
+    precio: "$3,659.00"
+  },
+  
+  {
     _id:"61030b9263f9cd1668bb61f3",
     categoria: "6101e1c9c25ecc14bf7b57b2",
     nombre: "Xtreme PC Gamer Geforce",
